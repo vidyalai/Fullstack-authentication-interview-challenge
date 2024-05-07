@@ -53,6 +53,24 @@ Develop an authentication system utilizing Next.js + Nest.js where Next.js in th
 - Implement rate limiter to mitigate brute-force login attacks.
 - Adding 404 page
 
+### User schema
+``` typescript
+interface User {
+  name: {
+    first: string;
+    last: string;
+  };
+  phone: {
+    countryCode: string;
+    number: string;
+  };
+  password: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+```
+
+
 ## Submission
 - Create a new public repository in your github account
 
